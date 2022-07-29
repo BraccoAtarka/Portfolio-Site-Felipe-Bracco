@@ -1,6 +1,8 @@
 /*
 Colors used:
-beige............. #E4DED0
+beige............. #EEE9DC
+darker beige...... #E4DED0
+lighter beige..... #EFEBE0
 dark red.......... #D54B1A
 vivid red......... #E32F21
 night black....... #181619
@@ -10,8 +12,26 @@ black............. #000000
 emerald blue...... #7DBEB8
 */
 
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+
+/* header {   tests for header
+  background-color: #EEE9DC;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #181619;
+  width: 80%;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #E4DED0
+  background-color: #EFEBE0
 }   /* Not two bodies, but it doesnt work when I do just one */
 
 body {
