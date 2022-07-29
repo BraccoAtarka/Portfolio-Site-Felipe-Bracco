@@ -9,7 +9,6 @@ gray.............. #C7C7C7
 dark blue......... #058789
 black............. #000000
 */
-
 /* Layout styling________________________ */
 .container {
   padding: 0 15px;
@@ -18,20 +17,31 @@ black............. #000000
 * {
   box-sizing: border-box;
 }
-/* ______________________________________ */
 
+/* ______________________________________ */
+header {
+  background-color: #EEE9DC /* the color does not work after I add padding and center, I needed to make 2
+  separate "headers", like the "body" does not work the background color*/
+  }
 
 header {
-  background-color: #EEE9DC padding: 10px 0;
+  padding: 10px 0;
   text-align: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+position: fixed;
+
+
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
   list-style-type: none;
   padding: 0 15px;
- text-transform: uppercase;
- font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /*  tests for header
@@ -41,6 +51,9 @@ margin: 10px;
 border: 2px solid #181619;
 width: 80%;*/
 
+main {
+  padding-top: 200px;
+}
 
 body {
   background-color: #EFEBE0
@@ -54,6 +67,8 @@ body {
   line-height: 1.6;
   color: #000000;
 }
+
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
