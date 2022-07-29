@@ -1,16 +1,18 @@
 /*
 Colors used:
+beige............. #E4DED0
+dark red.......... #D54B1A
+vivid red......... #E32F21
+night black....... #181619
 gray.............. #C7C7C7
-light yellow...... #F0ECC9
-orange............ #E3A72F
-red............... #D54B1A
 dark blue......... #058789
-neon blue......... #00F0FF
 black............. #000000
+emerald blue...... #7DBEB8
 */
+
 body {
-  background-color: #F0ECC9
-}
+  background-color: #E4DED0
+}   /* Not two bodies, but it doesnt work when I do just one */
 
 body {
   font-family: 'Cantarell', sans-serif;
@@ -42,7 +44,6 @@ h3 {
   font-family: 'Roboto Mono', sans-serif;
   font-size: 1.75em;
   font-weight: 300;
-  color: #E3A72F;
 }
 
 img {
@@ -51,43 +52,46 @@ img {
 
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #058789;
 }
 
-a {
-  color: #ff7f50;
-  text-decoration: none;
-  /* No underlining */
-}
 
 a:hover {
-  color: #cc6540;
+  color: #D54B1A;
   text-decoration: underline;
-  /* Underlining when hovering over a link
-  a:focus {
-  color: #cc6540;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #D54B1A;
   text-decoration: underline;
-} !!does not work!!! */
 }
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #E32F21;
 }
 
-
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #C7C7C7;
+  color: #058789;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #181619;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button:focus {
+  color: #D54B1A;
 }
