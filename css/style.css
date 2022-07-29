@@ -1,7 +1,6 @@
 /*
 Colors used:
 beige............. #EEE9DC
-darker beige...... #E4DED0
 lighter beige..... #EFEBE0
 dark red.......... #D54B1A
 vivid red......... #E32F21
@@ -9,31 +8,45 @@ night black....... #181619
 gray.............. #C7C7C7
 dark blue......... #058789
 black............. #000000
-emerald blue...... #7DBEB8
 */
 
-/* Layout styling */
+/* Layout styling________________________ */
 .container {
   padding: 0 15px;
 }
 
-
-/* header {   tests for header
-  background-color: #EEE9DC;
-  padding: 10px;
-  margin: 10px;
-  border: 2px solid #181619;
-  width: 80%;
-}*/
-
 * {
   box-sizing: border-box;
 }
+/* ______________________________________ */
+
+
+header {
+  background-color: #EEE9DC padding: 10px 0;
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 15px;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+/*  tests for header
+background-color: #EEE9DC;
+padding: 10px;
+margin: 10px;
+border: 2px solid #181619;
+width: 80%;*/
+
 
 body {
   background-color: #EFEBE0
-}   /* Not two bodies, but it doesnt work when I do just one */
+}
 
+/* Not two bodies, but it doesnt work when I do just one */
 body {
   font-family: 'Cantarell', sans-serif;
   font-size: 16px;
@@ -74,7 +87,6 @@ a:visited {
   /* visited link */
   color: #058789;
 }
-
 
 a:hover {
   color: #D54B1A;
