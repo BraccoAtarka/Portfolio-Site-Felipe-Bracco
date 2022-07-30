@@ -9,66 +9,18 @@ gray.............. #C7C7C7
 dark blue......... #058789
 black............. #000000
 */
-/* Layout styling________________________ */
-.container {
-  padding: 0 15px;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* ______________________________________ */
-header {
-  background-color: #EEE9DC /* the color does not work after I add padding and center, I needed to make 2
-  separate "headers", like the "body" does not work the background color*/
-  }
-
-header {
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  -webkit-box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
--moz-box-shadow:    0px 9px 17px 0px rgba(50, 50, 50, 0.5);
-box-shadow:         0px 9px 17px 0px rgba(50, 50, 50, 0.5);
-position: fixed;
-
-
-}
-
-nav>ul>li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/*  tests for header
-background-color: #EEE9DC;
-padding: 10px;
-margin: 10px;
-border: 2px solid #181619;
-width: 80%;*/
-
-main {
-  padding-top: 200px;
-}
-
 body {
-  background-color: #EFEBE0
-}
-
-/* Not two bodies, but it doesnt work when I do just one */
-body {
+  background-color: #EFEBE0;
   font-family: 'Cantarell', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #000000;
 }
-
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -98,9 +50,13 @@ img {
   width: 100%;
 }
 
+a: {
+  color: #058789;
+}
+
 a:visited {
   /* visited link */
-  color: #058789;
+  color: #181619;
 }
 
 a:hover {
@@ -139,6 +95,114 @@ a:active {
   text-decoration: none;
 }
 
+.button:active {
+  /* selected link */
+  color: #E32F21;
+}
+
 .button:focus {
   color: #D54B1A;
+}
+
+/* Layout styling________________________ */
+header {
+  background-color: #EEE9DC;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
+  position: fixed;
+}
+
+nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*  tests for header
+background-color: #EEE9DC;
+padding: 10px;
+margin: 10px;
+border: 2px solid #181619;
+width: 80%;*/
+main {
+  padding-top: 200px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+
+
+footer {
+margin-top: 100px;
+background-color: #EEE9DC;
+padding: 60px 0;
+text-align: center;
+font-family: 'Cantarell', sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 1.6;
+color: #000000;
+-webkit-box-shadow: 0px -1px 7px 0px rgba(50, 50, 50, 0.53);
+-moz-box-shadow:    0px -1px 7px 0px rgba(50, 50, 50, 0.53);
+box-shadow:         0px -1px 7px 0px rgba(50, 50, 50, 0.53);
+}
+
+footer svg {
+    width: 60px;
+    height: auto;
+}
+
+/*  ...................... ;*/
+
+
+@media only screen and (min-width: 1024px) {
+
+     .container {
+          max-width: 1200px;
+         padding: 0 0;
+         margin: 0 auto;
+          display: block;
+      }
+
+
+
+
+      .col-md-6 {
+    width: 47%;
+        padding-right: 1.5%;
+
+  }
+
+  .col-lg-7 {
+    width: 57%;
+ padding-right: 1.5%;
+
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+
+  }
+
+
+  [class*="col-"] {
+    float: left;
+  }
+
+
+        .container .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
 }
