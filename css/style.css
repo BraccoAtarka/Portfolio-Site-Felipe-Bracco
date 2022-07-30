@@ -80,16 +80,14 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #C7C7C7;
   color: #058789;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #181619;
-  /* width of the border, type, color */
   transition: 0.2s opacity;
+
 }
 
 .button:hover {
@@ -135,6 +133,37 @@ main {
   padding: 0 15px;
 }
 
+#about-picture{
+  height: auto;
+    width: auto;
+}
+@keyframes color-change { /* color of the sun */
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 footer {
   margin-top: 100px;
   background-color: #EEE9DC;
@@ -154,6 +183,8 @@ footer svg {
   width: 60px;
   height: auto;
 }
+
+
 
 /*  ...................... ;*/
 @media only screen and (min-width: 1024px) {
