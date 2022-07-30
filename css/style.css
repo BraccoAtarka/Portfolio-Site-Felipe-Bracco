@@ -6,7 +6,7 @@ dark red.......... #D54B1A
 vivid red......... #E32F21
 night black....... #181619
 gray.............. #C7C7C7
-dark blue......... #058789
+dark emerald blue. #058789
 black............. #000000
 */
 * {
@@ -31,14 +31,14 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.00em;
   font-weight: 500;
   font-family: 'Roboto Mono', sans-serif;
   color: #D54B1A;
 }
 
 h2 {
-  font-size: 2.00em;
+  font-size: 1.60em;
   font-weight: 500;
   font-family: 'Roboto Mono', sans-serif;
   color: #D54B1A;
@@ -46,7 +46,7 @@ h2 {
 
 h3 {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.20em;
   font-weight: 300;
 }
 
@@ -55,11 +55,10 @@ img {
 }
 
 a: {
-  color: #058789;
+  color: #058789;   /* the color does not work, it is still that weird "linkcolor" blue */
 }
 
 a:visited {
-  /* visited link */
   color: #181619;
 }
 
@@ -111,7 +110,7 @@ a:active {
 /* Layout styling________________________ */
 header {
   background-color: #EEE9DC;
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
   width: 100%;
   -webkit-box-shadow: 0px 9px 17px 0px rgba(50, 50, 50, 0.5);
@@ -122,20 +121,14 @@ header {
 
 nav>ul>li {
   display: inline-block;
-  list-style-type: none;
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
 }
 
-/*  tests for header
-background-color: #EEE9DC;
-padding: 10px;
-margin: 10px;
-border: 2px solid #181619;
-width: 80%;*/
+
 main {
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 .container {
@@ -194,4 +187,5 @@ footer svg {
     clear: both;
     display: table;
   }
+
 }
