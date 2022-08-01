@@ -54,8 +54,8 @@ img {
   width: 100%;
 }
 
-a: {
-  color: #058789;   /* the color does not work, it is still that weird "linkcolor" blue */
+a {
+  color: #058789;  
 }
 
 a:visited {
