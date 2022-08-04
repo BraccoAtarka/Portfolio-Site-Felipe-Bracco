@@ -18,22 +18,29 @@
 
   <meta charset="utf-8">
   <title>Multiplayer</title>
+
+  <!--font for hamburger menu -->
+  <script src="https://kit.fontawesome.com/68160408ab.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <header>
 
     <div class="container">
+<div class="navtoggle" id="myNavtoggle">
       <h1> Felipe Bracco </h1>
 
       <nav>
         <ul>
           <li> <a href="index.html">Projects</a></li>
           <li> <a href="about.html">About</a></li>
-          <li> <a href="#contact">Contact</a></li>
+          <li> <a onclick="menuToggle()" href="#contact">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
 
   </header>
 
