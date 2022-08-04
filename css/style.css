@@ -55,7 +55,7 @@ img {
 }
 
 a {
-  color: #058789;  
+  color: #058789;
 }
 
 a:visited {
@@ -117,6 +117,11 @@ header {
   position: fixed;
 }
 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 nav>ul>li {
   display: inline-block;
   padding: 0 15px;
@@ -124,6 +129,35 @@ nav>ul>li {
   font-weight: 300;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+ padding: 24px 0 0;
+}
+
+
+.navtoggle.responsive li  {
+ display: block;
+ padding: 12px 0;
+ border-top: 1px solid #058789;
+}
+
+.navtoggle.responsive li:last-child  {
+ padding: 0 0 10px;
+}
 
 main {
   padding-top: 180px;
@@ -218,5 +252,35 @@ footer svg {
     clear: both;
     display: table;
   }
+
+  .navtoggle.responsive nav {
+padding: 0px 0 0;
+}
+
+ nav > ul {
+list-style-type: none;
+padding: 0;
+margin: 1em 0;
+}
+
+nav > ul > li {
+ display: inline-block;
+
+}
+
+    .navtoggle.responsive li  {
+  padding:0px 15px;
+ border-top: 0px solid rgb(79, 122, 165);
+}
+
+   .navtoggle li:not(:last-child) {
+ display: inline-block;
+}
+
+   .navtoggle li:last-child {
+ display: none;
+}
+
+
 
 }
