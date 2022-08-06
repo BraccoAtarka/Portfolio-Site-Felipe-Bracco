@@ -6,7 +6,7 @@ dark red.......... #D54B1A
 vivid red......... #E32F21
 night black....... #181619
 gray.............. #C7C7C7
-dark emerald blue. #058789
+dark emerald blue. #058486
 black............. #000000
 */
 * {
@@ -55,7 +55,7 @@ img {
 }
 
 a {
-  color: #058789;
+  color: #058486;
 }
 
 a:visited {
@@ -80,8 +80,8 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #058789;
-  color: white;
+  background-color: #058486;
+  color: #FFFFFF;
   font-weight: 500;
   padding: 16px;
   border-radius: 3px;
@@ -92,7 +92,7 @@ a:active {
 .button:hover {
   opacity: 0.8;
   background: #D54B1A;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .button:active {
