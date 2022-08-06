@@ -14,7 +14,7 @@ black............. #000000
 }
 
 html {
-scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
@@ -87,13 +87,12 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #181619;
   transition: 0.2s opacity;
-
 }
 
 .button:hover {
   opacity: 0.8;
-  background: #D54B1A
-
+  background: #D54B1A;
+  color: #ffffff;
 }
 
 .button:active {
@@ -117,7 +116,7 @@ header {
   position: fixed;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -145,18 +144,17 @@ nav>ul>li {
 }
 
 .navtoggle.responsive nav {
- padding: 24px 0 0;
+  padding: 24px 0 0;
 }
 
-
-.navtoggle.responsive li  {
- display: block;
- padding: 12px 0;
- border-top: 1px solid #058789;
+.navtoggle.responsive li {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid #058789;
 }
 
-.navtoggle.responsive li:last-child  {
- padding: 0 0 10px;
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 main {
@@ -167,22 +165,35 @@ main {
   padding: 0 15px;
 }
 
-#about-picture{
+#about-picture {
   height: auto;
-    width: auto;
+  width: auto;
 }
-@keyframes color-change { /* color of the sun */
-  from {fill: #edc655;}
-  to {fill: #f76414;}
 
+@keyframes color-change {
+
+  /* color of the sun */
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -190,8 +201,13 @@ main {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -217,8 +233,6 @@ footer svg {
   width: 60px;
   height: auto;
 }
-
-
 
 /*  ...................... ;*/
 @media only screen and (min-width: 1024px) {
@@ -254,33 +268,29 @@ footer svg {
   }
 
   .navtoggle.responsive nav {
-padding: 0px 0 0;
-}
+    padding: 0px 0 0;
+  }
 
- nav > ul {
-list-style-type: none;
-padding: 0;
-margin: 1em 0;
-}
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
 
-nav > ul > li {
- display: inline-block;
+  nav>ul>li {
+    display: inline-block;
+  }
 
-}
+  .navtoggle.responsive li {
+    padding: 0px 15px;
+    border-top: 0px solid rgb(79, 122, 165);
+  }
 
-    .navtoggle.responsive li  {
-  padding:0px 15px;
- border-top: 0px solid rgb(79, 122, 165);
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-   .navtoggle li:not(:last-child) {
- display: inline-block;
-}
-
-   .navtoggle li:last-child {
- display: none;
-}
-
-
-
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
